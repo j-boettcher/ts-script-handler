@@ -1,0 +1,21 @@
+{
+    "name": "jboettcher/ts-script-handler",
+    "description": "Helpful extension to get typoscript out of controller context",
+    "type": "typo3-cms-extension",
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "typo3/cms-core": "^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jboettcher\\TsScriptHandler\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "ts_script_handler"
+        }
+    }
+}
