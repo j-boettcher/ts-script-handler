@@ -6,3 +6,11 @@ services:
   Jboettcher\TsScriptHandler\:
     resource: '../Classes/*'
     exclude: '../Classes/Domain/Model/*'
+  Jboettcher\TsScriptHandler\Command\TestCommand:
+    tags:
+      -
+        name: console.command
+        command: 'ts-script-handler:test'
+        description: 'Testing Typoscript in a command'
+        schedulable: false
+
