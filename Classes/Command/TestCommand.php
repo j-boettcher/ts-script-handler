@@ -21,7 +21,9 @@ class TestCommand extends Command
     {
         // Test if typoscript service works in cli context
         $typoScriptHandlerService = GeneralUtility::makeInstance(TypoScriptUtility::class);
-        $typoScriptHandlerService->getTypoScriptAsArray();
+        $typoscript = $typoScriptHandlerService->getTypoScript();
+
+        var_dump($typoscript);
 
         return 0;
     }
